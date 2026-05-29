@@ -25,7 +25,7 @@ export function Navbar() {
           <img
             src={logo}
             alt="SkillBridge"
-            className="h-10 w-auto object-contain"
+            className="h-12 w-auto object-contain md:h-14"
           />
         </a>
 
