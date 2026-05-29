@@ -90,6 +90,11 @@ export function Footer() {
             </div>
           </div>
         </div>
+
+        <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-white/8 px-5 py-4 text-center text-sm font-bold text-slate-600 dark:text-slate-300">
+          <p>SkillBridge © 2026</p>
+          <p className="mt-1">Criado por Gabriel, Julia, Alef e Roney.</p>
+        </div>
       </div>
     </footer>
   )

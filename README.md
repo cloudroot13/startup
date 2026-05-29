@@ -4,6 +4,15 @@ SkillBridge e uma plataforma social ficticia inspirada no Objetivo de Desenvolvi
 
 O projeto foi desenvolvido como uma proposta academica de startup social. A ideia central e ajudar pessoas de baixa renda a aprender habilidades praticas, acessar oportunidades e gerar renda por meio de cursos curtos, microtrabalhos e conexoes profissionais.
 
+## Criadores
+
+- Gabriel
+- Julia
+- Alef
+- Roney
+
+Ano: 2026
+
 ## Objetivo
 
 Criar uma experiencia digital acessivel, moderna e funcional para demonstrar como tecnologia pode apoiar inclusao social, educacao pratica e geracao de renda.

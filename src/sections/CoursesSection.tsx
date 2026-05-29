@@ -104,6 +104,17 @@ export function CoursesSection() {
             <FilterGroup label="Nivel" options={courseLevels} value={level} onChange={setLevel} />
             <FilterGroup label="Tempo" options={courseDurations} value={duration} onChange={setDuration} />
           </div>
+          <button
+            type="button"
+            onClick={() => {
+              setCategory('Todos')
+              setLevel('Todos')
+              setDuration('Todos')
+            }}
+            className="mt-5 inline-flex min-h-11 items-center justify-center rounded-full border border-white/60 bg-black px-5 text-sm font-black text-white transition hover:bg-yellow-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-300"
+          >
+            Limpar filtros
+          </button>
         </motion.div>
 
         <motion.div
