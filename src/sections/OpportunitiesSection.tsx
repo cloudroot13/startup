@@ -130,7 +130,7 @@ export function OpportunitiesSection() {
                   <button
                     type="button"
                     onClick={() => applyToOpportunity(item.title)}
-                    className="rounded-2xl bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-cyan-300 hover:text-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300 dark:bg-white dark:text-slate-950"
+                    className="rounded-2xl bg-yellow-300 px-5 py-3 text-sm font-black text-black transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-300"
                   >
                     {appliedTitles.includes(item.title) ? 'Enviado' : 'Candidatar'}
                   </button>

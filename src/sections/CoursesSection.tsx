@@ -9,7 +9,7 @@ import {
   Trophy,
   WifiOff,
 } from 'lucide-react'
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { SectionHeader } from '../components/SectionHeader'
 import { courseCategories, courseDurations, courseLevels, courses } from '../data/siteData'
 import { useLocalStorageState } from '../hooks/useLocalStorageState'
@@ -32,6 +32,7 @@ export function CoursesSection() {
     'skillbridge:downloaded-courses',
     [],
   )
+  const classroomRef = useRef<HTMLDivElement>(null)
 
   const filteredCourses = useMemo(() => {
     return courses.filter((course) => {
@@ -58,6 +59,9 @@ export function CoursesSection() {
   const selectCourse = (title: string) => {
     setSelectedCourseTitle(title)
     setActiveLessonIndex(0)
+    window.setTimeout(() => {
+      classroomRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 80)
   }
 
   const completeActiveLesson = () => {
@@ -167,14 +171,14 @@ export function CoursesSection() {
                   <button
                     type="button"
                     onClick={() => selectCourse(course.title)}
-                    className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/10 px-4 py-3 font-black text-slate-950 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300 group-hover:border-cyan-300/60 group-hover:bg-cyan-300 group-hover:text-slate-950 dark:text-white"
+                    className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/60 bg-black px-4 py-3 font-black text-white transition hover:bg-yellow-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-300"
                   >
                     {selectedCourse.title === course.title ? 'Aberto' : 'Iniciar'} <ArrowUpRight size={18} />
                   </button>
                   <button
                     type="button"
                     onClick={() => downloadCourse(course.title, course.offline)}
-                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-950 px-4 py-3 font-black text-white transition hover:bg-emerald-300 hover:text-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300 disabled:opacity-50 dark:bg-white dark:text-slate-950"
+                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-yellow-300 px-4 py-3 font-black text-black transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-300 disabled:bg-white/10 disabled:text-white disabled:opacity-60"
                     disabled={!course.offline}
                     title={course.offline ? 'Disponivel para baixar' : 'Disponivel em breve'}
                   >
@@ -198,6 +202,8 @@ export function CoursesSection() {
         </motion.div>
 
         <motion.div
+          ref={classroomRef}
+          id="sala-de-aula"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"

@@ -103,7 +103,7 @@ export function PitchDeckSection() {
               <button
                 type="button"
                 onClick={goToPrevious}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-white/10 px-4 py-3 font-black text-white transition hover:bg-yellow-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-300"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-white/60 bg-black px-4 py-3 font-black text-white transition hover:bg-yellow-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-300"
               >
                 <ArrowLeft size={18} />
                 Anterior
