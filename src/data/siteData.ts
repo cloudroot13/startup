@@ -4,11 +4,9 @@ import {
   CalendarCheck,
   Code2,
   Cpu,
-  FileText,
   Headphones,
   LineChart,
   Megaphone,
-  Scale,
   Palette,
   ShoppingBag,
   Sparkles,
@@ -259,7 +257,7 @@ export const opportunities: Opportunity[] = [
     time: '2 dias',
     match: 94,
     mode: 'Remoto',
-    difficulty: 'Media',
+    difficulty: 'Média',
     skill: 'Programação',
     verified: true,
   },
@@ -270,7 +268,7 @@ export const opportunities: Opportunity[] = [
     time: '24h',
     match: 89,
     mode: 'Remoto',
-    difficulty: 'Facil',
+    difficulty: 'Fácil',
     skill: 'Design',
     verified: true,
   },
@@ -281,7 +279,7 @@ export const opportunities: Opportunity[] = [
     time: '4h',
     match: 86,
     mode: 'Remoto',
-    difficulty: 'Facil',
+    difficulty: 'Fácil',
     skill: 'Vendas online',
     verified: true,
   },
@@ -384,13 +382,11 @@ export const testimonials = [
 
 export const navLinks = [
   { label: 'Sobre', href: '#sobre' },
-  { label: 'Projeto', href: '#projeto' },
   { label: 'Diagnóstico', href: '#diagnostico' },
   { label: 'Dashboard', href: '#dashboard' },
   { label: 'Cursos', href: '#cursos' },
   { label: 'Oportunidades', href: '#oportunidades' },
   { label: 'Impacto', href: '#impacto' },
-  { label: 'Pitch', href: '#pitch' },
 ]
 
 export const dashboardMetrics = [
@@ -463,71 +459,3 @@ export const recommendationMap = {
     match: 84,
   },
 }
-
-export const academicSummary = [
-  {
-    title: 'Problema',
-    text: 'Pessoas em situação de baixa renda enfrentam dificuldade para acessar educação prática, internet constante e oportunidades profissionais.',
-    icon: Scale,
-  },
-  {
-    title: 'Solução',
-    text: 'A SkillBridge oferece trilhas curtas, tarefas offline, microtrabalhos e recomendações personalizadas para acelerar a geração de renda.',
-    icon: Sparkles,
-  },
-  {
-    title: 'Público-alvo',
-    text: 'Jovens e adultos de baixa renda que possuem pouco tempo, acesso digital limitado e precisam aprender habilidades aplicaveis rapidamente.',
-    icon: Users,
-  },
-  {
-    title: 'ODS 1',
-    text: 'O projeto se conecta ao Objetivo de Desenvolvimento Sustentável 1 da ONU ao propor uma ferramenta de combate à pobreza por meio de renda e inclusão.',
-    icon: FileText,
-  },
-]
-
-export const businessModel = [
-  'Acesso gratuito para usuários em vulnerabilidade social.',
-  'Parcerias com ONGs, escolas, empresas e governos locais.',
-  'Planos institucionais para empresas financiarem trilhas de impacto.',
-  'Relatorios de impacto social para medir renda gerada e oportunidades criadas.',
-]
-
-export const pitchSlides = [
-  {
-    label: '01',
-    title: 'Problema',
-    text: 'A pobreza limita acesso a educação, internet, redes profissionais e renda recorrente.',
-    speakerNote:
-      'Comece explicando que a falta de oportunidade não é apenas falta de vontade, mas falta de acesso.',
-  },
-  {
-    label: '02',
-    title: 'Solução',
-    text: 'A SkillBridge conecta diagnóstico, cursos curtos, tarefas offline e oportunidades de renda.',
-    speakerNote:
-      'Mostre que a plataforma transforma aprendizado em ação prática, com foco em renda rápida.',
-  },
-  {
-    label: '03',
-    title: 'Diferencial',
-    text: 'A recomendação considera tempo, internet, experiência atual e objetivo financeiro do usuário.',
-    speakerNote:
-      'Destaque que não é um catálogo genérico de cursos, mas uma jornada personalizada.',
-  },
-  {
-    label: '04',
-    title: 'Impacto',
-    text: 'O projeto mede pessoas ajudadas, renda gerada, cursos concluidos e oportunidades criadas.',
-    speakerNote:
-      'Explique que impacto social precisa ser mensurável para atrair parceiros e investimento.',
-  },
-  {
-    label: '05',
-    title: 'Modelo',
-    text: 'Usuarios vulneraveis acessam gratis; instituicoes e empresas financiam trilhas de impacto.',
-    speakerNote:
-      'Feche mostrando sustentabilidade financeira sem cobrar de quem mais precisa.',
-  },
-]
