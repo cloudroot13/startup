@@ -23,7 +23,7 @@ export function useSpeechReader(language: string) {
     'SpeechSynthesisUtterance' in window
   const [isSpeaking, setIsSpeaking] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
-  const [voiceName, setVoiceName] = useState('Voz padrao do navegador')
+  const [voiceName, setVoiceName] = useState('Voz padrão do navegador')
 
   useEffect(() => {
     if (!isSupported) {
@@ -31,7 +31,7 @@ export function useSpeechReader(language: string) {
     }
 
     const updateVoiceName = () => {
-      setVoiceName(getPreferredVoice(language)?.name || 'Voz padrao do navegador')
+      setVoiceName(getPreferredVoice(language)?.name || 'Voz padrão do navegador')
     }
 
     updateVoiceName()

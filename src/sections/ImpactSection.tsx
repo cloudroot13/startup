@@ -9,7 +9,7 @@ const bars = [
   { label: 'Cursos', value: 88, amount: '64,2k' },
   { label: 'Renda', value: 74, amount: 'R$ 3,8 mi' },
   { label: 'Empregos', value: 69, amount: '12,8k' },
-  { label: 'Retencao', value: 81, amount: '81%' },
+  { label: 'Retenção', value: 81, amount: '81%' },
 ]
 
 export function ImpactSection() {
@@ -17,9 +17,9 @@ export function ImpactSection() {
     <section id="impacto" className="relative px-4 py-24 md:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          eyebrow="Impacto social mensuravel"
+          eyebrow="Impacto social mensurável"
           title="Erradicar pobreza exige renda, dignidade e dados."
-          description="A SkillBridge mede cada trilha, cada oportunidade e cada aumento de renda para provar que inclusao digital pode virar mobilidade social."
+          description="A SkillBridge mede cada trilha, cada oportunidade e cada aumento de renda para provar que inclusão digital pode virar mobilidade social."
           center
         />
 
@@ -39,8 +39,8 @@ export function ImpactSection() {
           <motion.div variants={fadeUp} className="glass rounded-[2rem] p-7">
             <div className="mb-8 flex items-center justify-between">
               <div>
-                <h3 className="text-2xl font-black text-slate-950 dark:text-white">Grafico de impacto</h3>
-                <p className="text-slate-600 dark:text-slate-300">Evolucao simulada do piloto social.</p>
+                <h3 className="text-2xl font-black text-slate-950 dark:text-white">Gráfico de impacto</h3>
+                <p className="text-slate-600 dark:text-slate-300">Evolução simulada do piloto social.</p>
               </div>
               <Activity className="text-cyan-300" size={28} />
             </div>
@@ -79,12 +79,12 @@ export function ImpactSection() {
             {[
               {
                 title: 'Aprendizado aplicado',
-                text: 'Cursos sao conectados a tarefas reais e portfolio.',
+                text: 'Cursos são conectados a tarefas reais e portfólio.',
                 icon: GraduationCap,
               },
               {
-                title: 'Renda rastreavel',
-                text: 'Relatorios mostram renda gerada por comunidade.',
+                title: 'Renda rastreável',
+                text: 'Relatórios mostram renda gerada por comunidade.',
                 icon: CircleDollarSign,
               },
               {
@@ -93,8 +93,8 @@ export function ImpactSection() {
                 icon: BarChart3,
               },
               {
-                title: 'Escala responsavel',
-                text: 'A plataforma prioriza seguranca, inclusao e permanencia.',
+                title: 'Escala responsável',
+                text: 'A plataforma prioriza segurança, inclusão e permanência.',
                 icon: Activity,
               },
             ].map((item) => {

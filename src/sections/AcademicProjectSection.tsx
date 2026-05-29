@@ -9,9 +9,9 @@ export function AcademicProjectSection() {
     <section id="projeto" className="relative px-4 py-24 md:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          eyebrow="Apresentacao academica"
+          eyebrow="Apresentação acadêmica"
           title="Uma startup social alinhada ao ODS 1."
-          description="Esta area resume a proposta da SkillBridge em formato claro para apresentacao em sala: problema, solucao, publico-alvo, impacto e modelo de sustentabilidade."
+          description="Esta área resume a proposta da SkillBridge em formato claro para apresentação em sala: problema, solução, público-alvo, impacto e modelo de sustentabilidade."
         />
 
         <motion.div
@@ -49,7 +49,7 @@ export function AcademicProjectSection() {
               </div>
               <div>
                 <h3 className="text-2xl font-black text-slate-950 dark:text-white">
-                  Roteiro rapido de fala
+                  Roteiro rápido de fala
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300">
                   Um resumo para explicar o projeto em poucos minutos.
@@ -58,11 +58,11 @@ export function AcademicProjectSection() {
             </div>
 
             <p className="leading-8 text-slate-700 dark:text-slate-200">
-              A SkillBridge e uma plataforma social criada para combater a pobreza por
-              meio de educacao pratica, inclusao digital e acesso a oportunidades de
-              renda. O usuario informa sua realidade, recebe uma trilha personalizada,
-              aprende habilidades de aplicacao rapida e encontra microtrabalhos
-              compativeis com seu perfil.
+              A SkillBridge é uma plataforma social criada para combater a pobreza por
+              meio de educação prática, inclusão digital e acesso a oportunidades de
+              renda. O usuário informa sua realidade, recebe uma trilha personalizada,
+              aprende habilidades de aplicação rápida e encontra microtrabalhos
+              compatíveis com seu perfil.
             </p>
           </motion.div>
 
@@ -76,7 +76,7 @@ export function AcademicProjectSection() {
                   Modelo de negocio
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  Sustentavel sem cobrar de quem mais precisa.
+                  Sustentável sem cobrar de quem mais precisa.
                 </p>
               </div>
             </div>

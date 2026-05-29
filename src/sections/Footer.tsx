@@ -49,7 +49,7 @@ export function Footer() {
               <span className="text-xl font-black text-slate-950 dark:text-white">SkillBridge</span>
             </div>
             <p className="mt-4 max-w-sm leading-7 text-slate-600 dark:text-slate-300">
-              Projeto academico inspirado no ODS 1, com foco em educacao, renda e inclusao digital.
+              Projeto acadêmico inspirado no ODS 1, com foco em educação, renda e inclusão digital.
             </p>
           </div>
 

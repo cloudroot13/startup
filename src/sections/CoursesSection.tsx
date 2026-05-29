@@ -40,8 +40,8 @@ export function CoursesSection() {
       const matchesLevel = level === 'Todos' || course.level === level
       const matchesDuration =
         duration === 'Todos' ||
-        (duration === 'Ate 3h' && course.duration <= 3) ||
-        (duration === 'Ate 5h' && course.duration <= 5) ||
+        (duration === 'Até 3h' && course.duration <= 3) ||
+        (duration === 'Até 5h' && course.duration <= 5) ||
         (duration === 'Mais de 5h' && course.duration > 5)
 
       return matchesCategory && matchesLevel && matchesDuration
@@ -81,9 +81,9 @@ export function CoursesSection() {
     <section id="cursos" className="relative px-4 py-24 md:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          eyebrow="Cursos de renda rapida"
+          eyebrow="Cursos de renda rápida"
           title="Trilhas curtas para habilidades que pagam."
-          description="Cada curso e desenhado para gerar portfolio, confianca e acesso a oportunidades reais em semanas, nao anos."
+          description="Cada curso é desenhado para gerar portfólio, confiança e acesso a oportunidades reais em semanas, não anos."
           center
         />
 
@@ -101,7 +101,7 @@ export function CoursesSection() {
 
           <div className="grid gap-4 lg:grid-cols-3">
             <FilterGroup label="Categoria" options={courseCategories} value={category} onChange={setCategory} />
-            <FilterGroup label="Nivel" options={courseLevels} value={level} onChange={setLevel} />
+            <FilterGroup label="Nível" options={courseLevels} value={level} onChange={setLevel} />
             <FilterGroup label="Tempo" options={courseDurations} value={duration} onChange={setDuration} />
           </div>
           <button
@@ -225,7 +225,7 @@ export function CoursesSection() {
             <div className="mb-6 flex items-start justify-between gap-4">
               <div>
                 <p className="mb-2 text-sm font-black uppercase tracking-[0.22em] text-yellow-300">
-                  Sala de aula ficticia
+                  Sala de aula fictícia
                 </p>
                 <h3 className="text-3xl font-black text-slate-950 dark:text-white">
                   {selectedCourse.title}
@@ -335,7 +335,7 @@ export function CoursesSection() {
             <div className="mt-5 rounded-3xl bg-white/8 p-5">
               <div className="mb-2 flex items-center gap-2 font-black text-yellow-300">
                 <Trophy size={20} />
-                Tarefa pratica
+                Tarefa prática
               </div>
               <p className="leading-7 text-slate-300">{activeLesson.task}</p>
             </div>
@@ -346,7 +346,7 @@ export function CoursesSection() {
               className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-yellow-300 px-5 py-4 font-black text-black transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-300"
             >
               <CheckCircle2 size={18} />
-              Marcar aula como concluida
+              Marcar aula como concluída
             </button>
           </div>
         </motion.div>

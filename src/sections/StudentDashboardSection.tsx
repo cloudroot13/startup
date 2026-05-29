@@ -9,9 +9,9 @@ export function StudentDashboardSection() {
     <section id="dashboard" className="relative px-4 py-24 md:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          eyebrow="Experiencia do aluno"
+          eyebrow="Experiência do aluno"
           title="Um painel simples para transformar estudo em renda."
-          description="A SkillBridge nao mostra apenas cursos. Ela organiza prioridades, recomenda tarefas pequenas e aproxima o aluno de oportunidades reais."
+          description="A SkillBridge não mostra apenas cursos. Ela organiza prioridades, recomenda tarefas pequenas e aproxima o aluno de oportunidades reais."
         />
 
         <motion.div
@@ -49,7 +49,7 @@ export function StudentDashboardSection() {
               </div>
               <div className="rounded-3xl bg-white/10 p-5">
                 <Target className="mb-4 text-cyan-300" size={25} />
-                <span className="text-sm text-slate-500 dark:text-slate-300">Tempo disponivel</span>
+                <span className="text-sm text-slate-500 dark:text-slate-300">Tempo disponível</span>
                 <strong className="mt-1 block text-3xl font-black text-slate-950 dark:text-white">
                   {studentProfile.weeklyTime}
                 </strong>
@@ -77,11 +77,11 @@ export function StudentDashboardSection() {
             <div className="glass rounded-[2rem] p-6 md:p-8">
               <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
                 <div>
-                  <h3 className="text-2xl font-black text-slate-950 dark:text-white">Plano dos proximos 7 dias</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Pequenas acoes, resultado visivel.</p>
+                  <h3 className="text-2xl font-black text-slate-950 dark:text-white">Plano dos próximos 7 dias</h3>
+                  <p className="text-slate-600 dark:text-slate-300">Pequenas ações, resultado visível.</p>
                 </div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-cyan-300 px-4 py-2 text-sm font-black text-slate-950">
-                  <Flame size={16} /> Sequencia 5 dias
+                  <Flame size={16} /> Sequência 5 dias
                 </span>
               </div>
 

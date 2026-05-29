@@ -27,11 +27,11 @@ export function ProfileDiagnosticSection() {
   )
 
   const recommendation = useMemo(() => {
-    if (profile.weeklyTime === '8h+' && profile.skillBase === 'Ja fiz trabalhos digitais') {
+    if (profile.weeklyTime === '8h+' && profile.skillBase === 'Já fiz trabalhos digitais') {
       return recommendationMap.tech
     }
 
-    if (profile.skillBase === 'Comecando do zero' || profile.internetAccess === 'Limitado') {
+    if (profile.skillBase === 'Começando do zero' || profile.internetAccess === 'Limitado') {
       return recommendationMap.fastIncome
     }
 
@@ -43,7 +43,7 @@ export function ProfileDiagnosticSection() {
     const internetScore =
       profile.internetAccess === 'Bom' ? 28 : profile.internetAccess === 'Regular' ? 20 : 12
     const skillScore =
-      profile.skillBase === 'Ja fiz trabalhos digitais'
+      profile.skillBase === 'Já fiz trabalhos digitais'
         ? 28
         : profile.skillBase === 'Sei usar celular'
           ? 20
@@ -64,9 +64,9 @@ export function ProfileDiagnosticSection() {
     <section id="diagnostico" className="relative px-4 py-24 md:py-32">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          eyebrow="Diagnostico inteligente"
-          title="A trilha certa comeca entendendo a realidade do aluno."
-          description="O perfil socioeconomico ajuda a SkillBridge recomendar cursos, tarefas offline e oportunidades compativeis com tempo, internet e objetivo de renda."
+          eyebrow="Diagnóstico inteligente"
+          title="A trilha certa começa entendendo a realidade do aluno."
+          description="O perfil socioeconômico ajuda a SkillBridge recomendar cursos, tarefas offline e oportunidades compatíveis com tempo, internet e objetivo de renda."
         />
 
         <motion.div
@@ -85,7 +85,7 @@ export function ProfileDiagnosticSection() {
                 <h3 className="text-2xl font-black text-slate-950 dark:text-white">
                   Perfil inicial
                 </h3>
-                <p className="text-slate-600 dark:text-slate-300">Simulacao para recomendar uma trilha.</p>
+                <p className="text-slate-600 dark:text-slate-300">Simulação para recomendar uma trilha.</p>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ export function ProfileDiagnosticSection() {
               />
               <OptionGroup
                 icon={Timer}
-                label="Tempo disponivel por semana"
+                label="Tempo disponível por semana"
                 options={profileOptions.weeklyTime}
                 value={profile.weeklyTime}
                 onChange={(value) => updateProfile('weeklyTime', value)}
@@ -158,7 +158,7 @@ export function ProfileDiagnosticSection() {
 
             <div className="mt-5 rounded-3xl border border-white/10 bg-white/8 p-5">
               <div className="mb-3 flex items-center justify-between">
-                <span className="font-black text-slate-950 dark:text-white">Prontidao digital</span>
+                <span className="font-black text-slate-950 dark:text-white">Prontidão digital</span>
                 <span className="font-black text-cyan-300">{readiness}%</span>
               </div>
               <div className="h-3 overflow-hidden rounded-full bg-slate-900/10 dark:bg-white/10">

@@ -23,7 +23,7 @@ export function PitchDeckSection() {
         <SectionHeader
           eyebrow="Pitch para apresentacao"
           title="Uma narrativa pronta para defender a SkillBridge."
-          description="Use esta area como guia de fala: ela resume problema, solucao, diferencial, impacto e modelo de negocio em formato de pitch."
+          description="Use esta área como guia de fala: ela resume problema, solução, diferencial, impacto e modelo de negócio em formato de pitch."
         />
 
         <motion.div
@@ -113,7 +113,7 @@ export function PitchDeckSection() {
                 onClick={goToNext}
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-yellow-300 px-4 py-3 font-black text-black transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-300"
               >
-                Proximo
+                Próximo
                 <ArrowRight size={18} />
               </button>
             </div>

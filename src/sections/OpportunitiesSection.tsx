@@ -170,7 +170,7 @@ export function OpportunitiesSection() {
             )}
             {[
               { label: 'Verificacao social', text: 'Empresas e tarefas passam por filtro de seguranca.', icon: ShieldCheck },
-              { label: 'Match por proximidade', text: 'Servicos locais aparecem para quem pode executar rapido.', icon: MapPin },
+              { label: 'Match por proximidade', text: 'Serviços locais aparecem para quem pode executar rápido.', icon: MapPin },
               { label: 'Renda emergencial', text: 'Trabalhos curtos priorizam pagamento claro e prazo definido.', icon: Zap },
               { label: 'Radar de crescimento', text: 'A cada tarefa, a plataforma sugere o proximo salto.', icon: Radar },
             ].map((item) => {

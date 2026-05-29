@@ -29,7 +29,7 @@ export function HomePage() {
         href="#conteudo"
         className="fixed left-4 top-4 z-[120] -translate-y-24 rounded-full bg-yellow-300 px-5 py-3 font-black text-black transition focus:translate-y-0"
       >
-        Pular para o conteudo
+        Pular para o conteúdo
       </a>
       <LoadingScreen isLoading={isLoading} />
       <ParticleField />

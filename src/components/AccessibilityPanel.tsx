@@ -71,7 +71,7 @@ export function AccessibilityPanel() {
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-cyan-300 px-4 py-3 font-black text-slate-950 transition hover:-translate-y-0.5 disabled:opacity-50"
               >
                 <Volume2 size={18} />
-                {isSpeaking ? 'Reiniciar leitura' : 'Ler pagina em voz alta'}
+                {isSpeaking ? 'Reiniciar leitura' : 'Ler página em voz alta'}
               </button>
 
               <p className="rounded-2xl bg-white/10 p-3 text-xs leading-5 text-slate-600 dark:text-slate-300">
@@ -140,7 +140,7 @@ export function AccessibilityPanel() {
 
               {!isSupported && (
                 <p className="rounded-2xl bg-amber-300/15 p-3 text-sm leading-6 text-amber-200">
-                  Este navegador nao suporta leitura por voz nativa.
+                  Este navegador não suporta leitura por voz nativa.
                 </p>
               )}
             </div>

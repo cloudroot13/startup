@@ -18,7 +18,7 @@ const problems = [
   },
   {
     title: 'Exclusao digital',
-    text: 'A falta de orientacao transforma tecnologia em barreira, nao em ponte.',
+    text: 'A falta de orientação transforma tecnologia em barreira, não em ponte.',
     icon: WifiOff,
   },
 ]
@@ -29,8 +29,8 @@ export function AboutSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="Problema e solucao"
-          title="A pobreza tambem e uma crise de acesso."
-          description="A SkillBridge combina aprendizado pratico, conexoes profissionais e oportunidades de renda rapida para reduzir desigualdades com tecnologia humana e mensuravel."
+          title="A pobreza também é uma crise de acesso."
+          description="A SkillBridge combina aprendizado prático, conexões profissionais e oportunidades de renda rápida para reduzir desigualdades com tecnologia humana e mensurável."
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-3">

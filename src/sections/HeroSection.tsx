@@ -39,7 +39,7 @@ export function HeroSection() {
             className="mt-7 max-w-2xl text-lg leading-8 text-slate-600 md:text-xl dark:text-slate-300"
           >
             Uma plataforma social que acelera a renda de pessoas de baixa renda com
-            cursos curtos, microtrabalhos verificados e conexoes profissionais orientadas
+            cursos curtos, microtrabalhos verificados e conexões profissionais orientadas
             por impacto.
           </motion.p>
 
@@ -86,8 +86,8 @@ export function HeroSection() {
                     <BookOpen size={22} />
                   </div>
                   <div>
-                    <h4 className="font-black text-white">Programacao para freelas</h4>
-                    <p className="text-sm text-slate-300">82% concluido, 3 oportunidades prontas</p>
+                    <h4 className="font-black text-white">Programação para freelas</h4>
+                    <p className="text-sm text-slate-300">82% concluído, 3 oportunidades prontas</p>
                   </div>
                 </div>
                 <div className="mt-5 h-3 overflow-hidden rounded-full bg-white/10">
