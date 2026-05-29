@@ -1,0 +1,19 @@
+{
+  "name": "SkillBridge",
+  "short_name": "SkillBridge",
+  "description": "Cursos, microtrabalhos e conexoes profissionais para gerar renda.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
